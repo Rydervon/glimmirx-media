@@ -91,27 +91,36 @@
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="block">
-                  <form>
+                  <form action="https://formspree.io/f/mkgwawpn" method="POST">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Your Name">
+                      <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Email Address">
+                      <input type="email" class="form-control" name="email" placeholder="Email Address" required>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Subject">
+                      <textarea class="form-control" name="message" placeholder="Your Message" rows="4" required></textarea>
                     </div>
-                  </form>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                  </form>                  
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
                 <div class="block">
-                  <form>
+                  <!-- <form>
                     <div class="form-group-2">
                       <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
                     </div>
                     <button class="btn btn-default" type="submit">Send Message</button>
-                  </form>
+                  </form> -->
+                  <div class="block">
+                    <h2>We Also Count In Google Map</h2>
+                      <div class="google-map">
+                        <div id="map"></div>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,12 +166,6 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-12">
-                <div class="block">
-                  <h2>We Also Count In Google Map</h2>
-                    <div class="google-map">
-                      <div id="map"></div>
-                    </div>
-                </div>
               </div>
             </div>
           </div>
